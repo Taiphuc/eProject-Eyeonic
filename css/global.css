@@ -1,0 +1,67 @@
+html {font-family: "Segoe UI" !important; font-size: 14px !important;}
+.full-width {left: 0; right: 0; width: 100%;}
+.row {margin:0 !important;}
+a {text-decoration: none; outline: 0;}
+/* ====================================== NAVIGATION BAR CONFIGURATION */
+#head-bar
+{
+	background-color: rgb(75, 75, 95);
+	width: 100% !important;
+	font-size: 11px !important;
+}
+#head-bar .nav-item {display: inline-block; position: relative; padding: 0;}
+#head-bar .nav-link {position: relative; height: 100%; outline: 0;}
+#head-bar .nav-link:hover, #head-bar .nav-link:focus {background-color: rgb(238, 238, 238); color: rgb(0, 0, 0) !important;}
+#head-bar .navbar-nav {padding-left: 20% !important;}
+
+#head-bar-right .head-bar-items
+{
+	border-left: 1px solid rgb(150, 150, 150);
+	color: white;
+	max-width: 400px !important;
+}
+#head-bar-right .head-bar-items:last-child {border-right: 1px solid rgb(150, 150, 150);}
+
+#head-bar .search-box {margin:1% 1% !important;}
+#head-bar .search-box button:hover
+{
+	background-color: rgba(75, 75, 95, 0.0) !important;
+	color: black !important;
+}
+#head-bar .search-box button
+{
+	background-color: #b00 !important;
+	color:white !important;
+	height: 29px !important; width: 2rem;
+	background: transparent; border: 0; outline: 0;
+}
+#head-bar .search-box input {border:0; width: 20%; height: 29px !important;}
+
+/* ====================================== HEADER CONFIGURATION */
+div#logo {width: 250px; height: 100px; border: 2px solid black;}
+header nav.nav {height: 100%;}
+header nav ul.navbar-nav {width: 100%;}
+header .nav-item {width:20%; border: 0; border-right: 0;}
+header .nav-link {top:25%; left:25%; position: relative;}
+
+/* ====================================== CONTENT CONFIGURATION */
+main {height: 500px;}
+#slideshow {width: 1000px; height: 500px; margin: 1% auto; background-color: black;}
+#slideshow img {width: 100%; height: 100%;}
+#slideshow .carousel-item {color:white;}
+/* ====================================== FOOTER CONFIGURATION */
+footer
+{
+	background-color: rgb(51, 51, 51);
+	padding: 20px 0; bottom: 0; position: absolute;
+	margin-top: 1%;
+}
+#footer-inner {}
+#footer-column-links {padding: 1.530612244% 0 0;}
+#footer-column-links h3
+{
+	font-size: 14px;
+	font-weight: 700;
+	color: rgb(204, 204, 204);
+	margin: 5px 0;
+}
