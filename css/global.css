@@ -6,11 +6,11 @@ a {text-decoration: none; outline: 0;}
 #head-bar
 {
 	background-color: rgb(75, 75, 95);
-	width: 100% !important;
+	width: 100% !important; max-height: 34px;
 	font-size: 11px !important;
 }
 #head-bar .nav-item {display: inline-block; position: relative; padding: 0;}
-#head-bar .nav-link {position: relative; height: 100%; outline: 0;}
+#head-bar .nav-link {outline: 0; max-height: 34px;}
 #head-bar .nav-link:hover, #head-bar .nav-link:focus {background-color: rgb(238, 238, 238); color: rgb(0, 0, 0) !important;}
 #head-bar .navbar-nav {padding-left: 20% !important;}
 
@@ -18,7 +18,6 @@ a {text-decoration: none; outline: 0;}
 {
 	border-left: 1px solid rgb(150, 150, 150);
 	color: white;
-	max-width: 400px !important;
 }
 #head-bar-right .head-bar-items:last-child {border-right: 1px solid rgb(150, 150, 150);}
 
@@ -46,14 +45,16 @@ header .nav-link {top:25%; left:25%; position: relative;}
 
 /* ====================================== CONTENT CONFIGURATION */
 main {height: 500px;}
+main::after {display: block;}
 #slideshow {width: 1000px; height: 500px; margin: 1% auto; background-color: black;}
 #slideshow img {width: 100%; height: 100%;}
 #slideshow .carousel-item {color:white;}
 /* ====================================== FOOTER CONFIGURATION */
 footer
 {
+	display: block;
 	background-color: rgb(51, 51, 51);
-	padding: 20px 0; bottom: 0; position: absolute;
+	padding: 20px 0;
 	margin-top: 1%;
 }
 #footer-inner {}
