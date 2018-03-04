@@ -35,3 +35,7 @@ body {background: #eee !important;}
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+span {color: red; font-size: 50px; font-weight: bold;}
+
+#msg-login-success, #msg-login-fail {display: none;}
