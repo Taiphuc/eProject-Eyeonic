@@ -1,40 +1,54 @@
 html {font-family: "Segoe UI" !important; font-size: 14px !important;}
-.full-width {left: 0; right: 0; width: 100%;}
 .row {margin:0 !important;}
 a {text-decoration: none; outline: 0;}
 /* ====================================== NAVIGATION BAR CONFIGURATION */
 #head-bar
 {
 	background-color: rgb(75, 75, 95);
-	width: 100% !important; max-height: 34px;
+	width: 100% !important;
 	font-size: 11px !important;
+	height: 42px;
 }
-#head-bar .nav-item {display: inline-block; position: relative; padding: 0;}
-#head-bar .nav-link {outline: 0; max-height: 34px;}
+#head-bar .nav-item {padding: 0;}
+#head-bar .nav-link {outline: 0; height: 100%; padding: 1rem 1rem;}
 #head-bar .nav-link:hover, #head-bar .nav-link:focus {background-color: rgb(238, 238, 238); color: rgb(0, 0, 0) !important;}
-#head-bar .navbar-nav {padding-left: 20% !important;}
 
-#head-bar-right .head-bar-items
+#collapsible-bar.show
+{
+	background-color: rgb(75, 75, 95);
+	z-index: 1030;
+	width: 50% !important;
+}
+#collapsible-bar.show .navbar-nav {margin-right: auto !important;}
+#collapsible-bar.show .navbar-nav .head-bar-items {border: 0; right: -50%; position: relative;}
+
+.navbar-toggler, .navbar-toggler-icon {outline: 0;}
+
+#head-bar .head-bar-items
 {
 	border-left: 1px solid rgb(150, 150, 150);
 	color: white;
+	max-height: 42px; max-width: 50%;
 }
-#head-bar-right .head-bar-items:last-child {border-right: 1px solid rgb(150, 150, 150);}
+#head-bar .head-bar-items:first-child {width: 50%; border:0;}
+#head-bar .head-bar-items:last-child {border-right: 1px solid rgb(150, 150, 150);}
+#head-bar .navbar-nav {}
 
-#head-bar .search-box {margin:1% 1% !important;}
+#head-bar .search-box {height: auto; padding: 2.5%;}
+
 #head-bar .search-box button:hover
 {
 	background-color: rgba(75, 75, 95, 0.0) !important;
 	color: black !important;
+	cursor:pointer;
 }
 #head-bar .search-box button
 {
 	background-color: #b00 !important;
-	color:white !important;
-	height: 29px !important; width: 2rem;
+	color:white !important; width: 2.5rem;
 	background: transparent; border: 0; outline: 0;
 }
-#head-bar .search-box input {border:0; width: 20%; height: 29px !important;}
+#head-bar .search-box input {border:0;}
 
 /* ====================================== HEADER CONFIGURATION */
 div#logo {width: 250px; height: 100px; border: 2px solid black;}
