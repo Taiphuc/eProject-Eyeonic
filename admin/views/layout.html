@@ -1,13 +1,169 @@
 <!-- BEGIN: LAYOUT -->
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>SB Admin - Start Bootstrap Template</title>
+	<!-- Bootstrap core CSS-->
+	<link href="{baseUrl}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom fonts for this template-->
+	<link href="{baseUrl}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom styles for this template-->
+	<link href="{admin_config}/css/global.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+    	</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+					<a class="nav-link" href="#">
+			            <i class="fa fa-fw fa-dashboard"></i>
+			            <span class="nav-link-text">Dashboard</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+					<a class="nav-link" href="#">
+			            <i class="fa fa-fw fa-area-chart"></i>
+			            <span class="nav-link-text">Charts</span>
+					</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+					<a class="nav-link" href="#">
+	            		<i class="fa fa-fw fa-table"></i>
+	            		<span class="nav-link-text">Tables</span>
+          			</a>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+					<a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+			            <i class="fa fa-fw fa-wrench"></i>
+			            <span class="nav-link-text">Components</span>
+          			</a>
+					<ul class="sidenav-second-level collapse" id="collapseComponents">
+						<li><a href="#">Navbar</a></li>
+						<li><a href="#">Cards</a></li>
+					</ul>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+					<a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+			            <i class="fa fa-fw fa-sitemap"></i>
+			            <span class="nav-link-text">Menu Levels</span>
+					</a>
+					<ul class="sidenav-second-level collapse" id="collapseMulti">
+						<li><a href="#">Second Level Item</a></li>
+						<li><a href="#">Second Level Item</a></li>
+						<li><a href="#">Second Level Item</a></li>
+						<li>
+							<a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+							<ul class="sidenav-third-level collapse" id="collapseMulti2">
+								<li><a href="#">Third Level Item</a></li>
+								<li><a href="#">Third Level Item</a></li>
+								<li><a href="#">Third Level Item</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+					<a class="nav-link" href="#">
+			            <i class="fa fa-fw fa-link"></i>
+			            <span class="nav-link-text">Link</span>
+          			</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav sidenav-toggler">
+				<li class="nav-item">
+					<a class="nav-link text-center" id="sidenavToggler"><i class="fa fa-fw fa-angle-left"></i></a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="content-wrapper">
+		<div class="container-fluid">
+			<!-- Breadcrumbs-->
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">Dashboard</a>
+				</li>
+				<li class="breadcrumb-item active">Blank Page</li>
+			</ol>
+			<div class="row">
+				<div class="col-12">
+					{admin_content}
+				</div>
+			</div>
+		</div>
+		<!-- /.container-fluid-->
+		<!-- /.content-wrapper-->
+
+		<footer class="sticky-footer">
+			<div class="container">
+				<div class="text-center">
+					<small>Copyright © The Neoteric 2018</small>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scroll to Top Button-->
+		<a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Logout Modal-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+					</div>
+					<div class="modal-body">Are you sure to exit ?</div>
+					<div class="modal-footer">
+						<form class="" action="" method="post">
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+							<button class="btn btn-primary" type="submit" name="Logout">Logout</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Bootstrap core JavaScript-->
+		<script src="{baseUrl}/vendor/jquery/jquery.min.js"></script>
+		<script src="{baseUrl}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- Core plugin JavaScript-->
+		<script src="{baseUrl}/vendor/jquery-easing/jquery.easing.min.js"></script>
+		<!-- Custom scripts for all pages-->
+		<script src="{admin_config}/js/sb-admin.min.js"></script>
+	</div>
+</body>
+
+</html>
+<!-- END: LAYOUT -->
+
+<!-- BEGIN: LOGIN -->
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
 		<title>Administrator</title>
 
-		<link rel='stylesheet' type='text/css' href='{baseUrl}/admin/css/global.css'>
+		<link rel='stylesheet' type='text/css' href='{admin_config}/css/global.css'>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,7 +173,16 @@
 	</head>
 
 	<body>
-		{admin_content}
+		<div class="wrapper">
+			<form class="form-signin" id="admin_Login" method="post">
+				<h3 class="form-signin-heading h3" align="center">Eyeonic project</h3>
+
+				<input type="text" class="form-control" name="admin_acc" value="admin" required>
+				<input type="password" class="form-control" name="admin_pw" placeholder="Password" required autofocus>
+
+				<button class="btn btn-lg btn-primary btn-block" type="submit" name="Login">Login</button>
+			</form>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -26,4 +191,4 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
-<!-- END: LAYOUT -->
+<!-- END: LOGIN -->

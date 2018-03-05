@@ -1,11 +1,23 @@
-/* The version of Bourbon used in this Pen was 4.* */
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "utilities.scss";
+@import "navbar/navbar_global.scss";
+@import "navbar/navbar_fixed.scss";
+@import "navbar/navbar_static.scss";
+@import "navbar/navbar_toggle.scss";
+@import "navbar/navbar_colors.scss";
+@import "cards.scss";
+@import "login.scss";
+@import "footer.scss";
+
 @import "bourbon";
 
 body {
-	background: #eee !important;	
+	background: #eee !important;
 }
 
-.wrapper {	
+.wrapper {
 	margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -15,7 +27,7 @@ body {
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);  
+  border: 1px solid rgba(0,0,0,0.1);
 
   .form-signin-heading,
 	.checkbox {

@@ -1,8 +1,9 @@
 <?php
-	require_once('../libs/session-management.php');
+	require('../libs/session.php');
 
+	$site = 'PAGECHECK';
 	$xpt = new XTemplate('views/test/check.html');
 
-	$xpt->parse('PAGECHECK');
-	$admin_content = $xpt->text('PAGECHECK');
+	$xpt->parse($site);
+	$admin_content = $xpt->text($site);
 ?>

@@ -1,10 +1,4 @@
 <?php
-	$xpt = new XTemplate('views/account/login.html');
-	$xpt->parse('LOGIN');
-	$xpt->out('LOGIN');
-
-	$admin_content = NULL;
-
 	if (!empty($_POST['admin_pw']) && !empty($_POST['admin_acc']) && isset($_POST['Login']))
 	{
 		ob_start();
@@ -32,9 +26,11 @@
 			else if (password_verify($info['password'], $pw_hash))
 			{
 				$_SESSION['admin_authentication'] = true;
-				debug_PageRedirect('?settings=test&func=check', 0);
+				debug_PageRedirect("{$admin_config}/?settings=test&func=check", 0);
 			}
 		}
 		ob_end_flush();
 	}
+
+
 ?>

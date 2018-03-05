@@ -1,38 +1,12 @@
-<!-- BEGIN: LOGIN -->
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<!-- BEGIN: LOGINFROM -->
+<div class="wrapper">
+	<form class="form-signin" method="post">
+		<h3 class="form-signin-heading h3" align="center">Eyeonic project</h3>
 
-		<title>Administrator</title>
+		<input type="text" class="form-control" name="admin_acc" value="admin" required>
+		<input type="password" class="form-control" name="admin_pw" placeholder="Password" required autofocus>
 
-		<link rel='stylesheet' type='text/css' href='{admin_config}/css/global.css'>
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	</head>
-
-	<body>
-		<div class="wrapper">
-			<form class="form-signin" id="admin_Login" method="post">
-				<h3 class="form-signin-heading h3" align="center">Eyeonic project</h3>
-
-				<input type="text" class="form-control" name="admin_acc" value="admin" required>
-				<input type="password" class="form-control" name="admin_pw" placeholder="Password" required autofocus>
-
-				<button class="btn btn-lg btn-primary btn-block" type="submit" name="Login">Login</button>
-			</form>
-		</div>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
-</html>
-<!-- END: LOGIN -->
+		<button class="btn btn-lg btn-primary btn-block" type="submit" name="Login">Login</button>
+	</form>
+</div>
+<!-- END: LOGINFROM -->
