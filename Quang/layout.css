@@ -38,17 +38,18 @@
 
 .top-row .open-time{
 	display: block;
-	width:55%;
-	margin:auto;
+	width:auto;
+	margin-left: 4vw;
 	line-height: 35px;
 	font-size: 15px;
 	color: #8a8a89;
 }
 .account-active-list{
+	
 	display: block;
-	margin-left: 12%;
 	list-style-type: none;
 }
+
 .account-active{
 	display: block;
 	width: auto;
@@ -70,15 +71,19 @@
 }
 
 .navbar .logo {
-    width: 100%;
-    text-align: center;
+	
+    width: 15vw;
+    height: 90px;
+    line-height: 80px;
+    display: block;
+    margin-left: 4vw;
     font-size: 20px;
 
 }
 .navbar .nav-item{
     display: block;
     width: auto !important;
-    padding: 0px 7px 0 7px ;
+    padding: 0px 1vw 0 1vw ;
     font-size: 17px;
     line-height: 80px;
     height: 90px;
@@ -113,10 +118,12 @@
 	display: block !important;
 }
 .nav-search-bar{
-	
+	display: block;
+	float: right;
+	margin-right: -2vw;
 }
 .nav-search-bar .nav-search-box{
-	width: 60%;
+	width: 17vw;
 
 }
 
