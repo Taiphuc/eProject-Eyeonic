@@ -21,19 +21,17 @@
 			{
 				echo "Not connected to database <br>".$e->getMessage();
 			}
-
 		}
 		public function execSQL($sql)
 		{
-			$sth=$this->_db->prepare($sql);
-			$sth->execute();
-			return $sth;
+			$var=$this->_db->prepare($sql);
+			$var->execute();
+			return $var;
 		}
 		public function fetchAll($sql)
 		{
 			$dbh = $this->execSQL($sql);
 			return $dbh->fetchAll(PDO::FETCH_ASSOC);
-
 		}
 		public function fetchOne($sql)
 		{
