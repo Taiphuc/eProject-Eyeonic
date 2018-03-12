@@ -1,0 +1,255 @@
+
+#info-row{
+	height: 35px;
+	line-height: 35px;
+	background: #000;
+	color:#FFF;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+#info-row .info{
+	width: 26vw;
+	margin-left: -8vw;	
+	margin-top: 10px;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	border-radius: 3px;
+}
+#info-row .info .title{
+	text-align: center;
+	font-size: 13px;
+}
+#info-row .info .content{
+	padding-top: 10px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-row{
+	background: #eae9e5;
+	height: 35px;
+}
+
+.top-row .open-time{
+	display: block;
+	width:auto;
+	margin-left: 4vw;
+	line-height: 35px;
+	font-size: 15px;
+	color: #8a8a89;
+}
+.account-active-list{
+	
+	display: block;
+	list-style-type: none;
+}
+
+.account-active{
+	display: block;
+	width: auto;
+	font-size: 13px;
+	color: #000;
+	float: left;
+	margin-left: -4%; 
+}
+.account-active:hover{
+	color: #8a8a89;
+}
+/* ------------------- CSS NAVBAR BLOCK ---------------*/
+
+
+.navbar {
+    height: 90px;
+   
+    border-bottom: solid 1px #eae9e5 !important;
+}
+
+.navbar .logo {
+	
+    width: 15vw;
+    height: 90px;
+    line-height: 80px;
+    display: block;
+    margin-left: 4vw;
+    font-size: 20px;
+
+}
+.navbar .nav-item{
+    display: block;
+    width: auto !important;
+    padding: 0px 1vw 0 1vw ;
+    font-size: 17px;
+    line-height: 80px;
+    height: 90px;
+    
+}
+.navbar .nav-item:hover{
+	border-bottom: solid 2px #3fabe6;
+}
+.dropdown-menu{
+	z-index: 1;
+    -webkit-box-shadow: 0 6px 8px rgba(0,0,0,.3);
+    box-shadow: 0 6px 8px rgba(0,0,0,.3);
+	width: 250px;
+	border-radius: 0;
+	padding: 0 3px 0 3px; 
+	
+	border: none;
+}
+.dropdown-menu .dropdown-item{
+	line-height: 33px;
+	height: 45px !important;
+}
+
+.dropdown-menu .dropdown-divider{
+	width: 90%;
+	margin: auto;
+}
+.dropdown-menu .dropdown-item:hover{
+	color: #3fabe6;
+}
+.dropdown:hover .dropdown-menu{
+	display: block !important;
+}
+.nav-search-bar{
+	display: block;
+	float: right;
+	margin-right: -2vw;
+}
+.nav-search-bar .nav-search-box{
+	width: 17vw;
+
+}
+
+/*---------------------------------------------------------*/
+
+main{
+	height:auto;
+}
+#images-slice
+{
+	height:auto;
+}
+#main-section{
+	width:1000px;	
+}
+.advertise{
+	text-align:center;
+}
+.brand{
+}
+.brand:hover{
+	color:#666;
+}
+#content-page{
+	margin-top:30px;
+}
+#findsize-btn{
+	box-sizing: border-box;
+	background-color:white;
+	border:solid 2px #4d4d4d;
+	font-weight:bold;
+	color:#4d4d4d;
+}
+.column-left{
+	padding-top:10px;
+}
+.column-left h4{
+	font:italic 21px/1 Georgia;
+	color:#4d4d4d;
+	margin-top:20px;
+}
+.column-left ul li{
+	list-style-type:none;
+	font:normal 13px/12px Arial;
+}
+#btnColumn{
+	width:135px;
+	background-color:white;
+	border:white;
+	color:#323232;
+	font-weight:bold;
+	font-family:Helvetica;
+	font-size:14px;
+	display:block;
+}
+.li-column-left{
+	margin:10px;
+}
+.img-column-left{
+	margin-right:10px;
+}
+.sunglasses-title{
+	font-weight:1000;
+	font:normal 32px/36px "Arial Black",Arial
+}
+#page-list{
+	margin-top:20px;
+}
+#page-list a{
+	color:#000;
+	margin-right:5px;
+}
+#page-list a:hover{
+	text-decoration:none;
+	color:#0CF;
+}
+#product{
+	display:inline-block;	
+}
+.favorite{
+	color:#0CF;
+}
+.favorite:hover{
+	
+}
+.product-img{
+	width:220px;
+	height:110px;
+	display:inline-block;
+	margin-top:20px;
+}
+.product-name{
+	text-align:center;
+	margin-top:20px;	
+}
+.product-name p{
+	font:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+.product-link{
+	color:#1c1c1c;
+	font:bold 15px/18px Arial;
+}
+.product-link:hover{
+	text-decoration:none;
+	color:#1c1c1c;
+}
+#big-selected{
+	padding-top:20px;
+}
+#selected{
+	border:2px solid #333;	
+}
+
+footer
+{
+	display: block;
+	background-color: rgb(51, 51, 51);
+	padding: 20px 0;
+	margin-top: 1%;
+}
+#footer-inner {}
+#footer-column-links {padding: 1.530612244% 0 0;}
+#footer-column-links h3
+{
+	font-size: 15px;
+	font-weight: 700;
+	color: rgb(204, 204, 204);
+	margin: 5px 0;
+	height: auto;
+}
